@@ -5,106 +5,157 @@
 
 
 
-.main-container {
-	height: 100vh;
+nav {
+	position: absolute;
 	width: 100%;
-	background-image: url("../img/bg.jpg");
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 100px;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 }
 
+
+#resp-navbar {
+	display: none;
+}
 
 .logo {
-     width: 70%;
-}
-
-
-.nav-btn {
+	width: 20%;
 	display: flex;
-	justify-content: flex-start;
-	padding: 20px;
-}
+	justify-content:center;
 
-
-.nav-logo {
-	position: absolute;
-	top:  5px;
-	right: 10px;
-}
-.body {
-	width: 50%;
-	height: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	margin-left: 10%;
 
 }
 
-.body h1 , p , button {
-	padding-top: 10px;
+.logo img {
+	width: 100px;
+
+
 }
 
-.body h1 {
+.logo a {
+	font-size: 1.2em;
 	color: white;
-	font-family: serif;
-	font-size: 4em;
-
+	text-decoration:none;
+	font-family: Arial Black;
+	position: relative;
+	top: 10px;
 }
 
 
-.body p {
+
+.nav-links {
+	width: 70%;
+	display: inline-flex;
+	justify-content: space-around;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.nav-links a {
+	color:  white;
+	text-decoration: none;
+}
+
+.search-icn {
+	margin-right: 10px;
+}
+
+
+
+
+
+.owl-carousel img {
+   height: 100vh;
+     filter: brightness(50%);
+}
+
+
+
+.img-cont  {
+   
+   position: absolute;
+   z-index: 3;
+   top: 50%;
+   margin-left: 10%;
+   height: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+
+
+}
+
+.img-cont h2 , p {
+   font-family: Lucida Console;
+   color: white;
+   font-weight: bold;
+}
+
+.img-cont span {
 	color: white;
-	font-family: sans-serif;
+	font-size: 1.2em;
+}
 
+.img-cont h2 {
+	font-size: 2.5em;
 }
 
 
-.body button {
+.img-cont p{
+	font-size: 1.3em;
+}
+
+
+.img-cont button {
 	border: none;
-	border-radius: 30px;
 	background-color: white;
 	color: black;
-	padding: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
-	font-size: 1em;
+	border-radius: 30px;
 	outline: none;
+	font-size: 1em;
+	padding: 10px;
 	font-weight: bold;
 	transition: background-color 1s;
-
 }
 
 
-.body button:hover {
-     background-color: silver;
+.img-cont button:hover {
+	background-color: silver;
 }
 
-@media only screen and (max-width: 700px) {
 
-   .body {
-	
-	align-items: center;
-	width: 100%;
-    margin-left: 0;
+@media only screen and (max-width: 1100px) {
+	#resp-navbar {
+		display: block;
+		height: 80px;
+		display: flex;
+		align-items: center;
+	}
 
 
+	.nav-container {
+		display: none;
+	}
 }
 
-.nav-logo  {
-   right: 0;
-  
-}
 
-.logo {
-	width: 100px;
-}
-}
+@media only screen and (max-width: 915px) {
+	.logo {
+           width: 40%;
+	}
+} 
 
-@media only screen and (max-width: 500px) {
-     .logo {
-     	display: none;
-     }
-}
+
+
+
+@media only screen and (max-width: 416px) {
+	.logo {
+           width: 50%;
+	}
+} 
