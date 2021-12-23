@@ -1,0 +1,110 @@
+* {
+	padding: 0;
+	margin: 0
+}
+
+
+
+.main-container {
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/bg.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.logo {
+     width: 70%;
+}
+
+
+.nav-btn {
+	display: flex;
+	justify-content: flex-start;
+	padding: 20px;
+}
+
+
+.nav-logo {
+	position: absolute;
+	top:  5px;
+	right: 10px;
+}
+.body {
+	width: 50%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: 10%;
+
+}
+
+.body h1 , p , button {
+	padding-top: 10px;
+}
+
+.body h1 {
+	color: white;
+	font-family: serif;
+	font-size: 4em;
+
+}
+
+
+.body p {
+	color: white;
+	font-family: sans-serif;
+
+}
+
+
+.body button {
+	border: none;
+	border-radius: 30px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1em;
+	outline: none;
+	font-weight: bold;
+	transition: background-color 1s;
+
+}
+
+
+.body button:hover {
+     background-color: silver;
+}
+
+@media only screen and (max-width: 700px) {
+
+   .body {
+	
+	align-items: center;
+	width: 100%;
+    margin-left: 0;
+
+
+}
+
+.nav-logo  {
+   right: 0;
+  
+}
+
+.logo {
+	width: 100px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+     .logo {
+     	display: none;
+     }
+}
