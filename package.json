@@ -1,26 +1,22 @@
 {
-  "name": "tooth-life-quiz",
+  "name": "maritimee",
   "version": "1.0.0",
-  "description": "Its a quiz about the oral health",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Joe Path",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphon770/maritime.git"
+  },
+  "author": "ayoub",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alphon770/maritime/issues"
+  },
+  "homepage": "https://github.com/alphon770/maritime#readme",
   "dependencies": {
-    "@google-cloud/connect-datastore": "^4.0.0",
-    "@google-cloud/datastore": "^5.1.0",
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "ejs": "^3.0.2",
-    "express": "^4.17.1",
-    "express-force-https": "^1.0.0",
-    "express-session": "^1.17.0",
-    "nconf": "^0.10.0",
-    "nconfig": "0.0.6",
-    "nodemon": "^2.0.2",
-    "path": "^0.12.7"
+    "express": "^4.17.2"
   }
 }
